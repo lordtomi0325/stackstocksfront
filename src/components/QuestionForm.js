@@ -27,7 +27,7 @@ const QuestionForm = () => {
           setSubmitting(false);
           axios({
             method: 'post',
-            url: 'http://localhost:3001/api/support',
+            url: '/api/support',
             timeout: 4000,    // 4 seconds timeout
             data: values
           })
