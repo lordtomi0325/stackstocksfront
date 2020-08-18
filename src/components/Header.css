@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+#header {
+  margin-bottom: 30px;
+}
+#home > a {
+  font-family: 'Lobster', cursive;
+  color: black;
+  text-decoration: none;
+  font-size: 3em;
+}
+.buttons {
+  float: right;
+  margin-right: 10px;
+}
+
+#telegram {
+  display:inline-block
+}
+#telegram > i {
+  font-size:36px;
+}
+#telegram > span {
+  display:block;
+}
+
+#help {
+  margin-right: 15px;
+  display:inline-block;
+  text-align: center;
+}
+#help > i {
+  font-size:36px;
+}
+#help > span {
+  display:block;
+}
+
+.buttons > a {
+  margin-right: 15px;
+  color:black;
+  text-decoration: none;
+  display:inline-block;
+  text-align: center;
+}
+.buttons > a > i {
+  font-size:36px;
+}
+.buttons > a > span {
+  display:block;
+}
+@media all and (min-width:321px) and (max-width:768px) {
+  #home > a {
+    font-size: 2.3em;
+  }
+  #question {
+    margin-right: -4px;
+  }
+}
+@media (max-width:320px) {
+  #home > a {
+    font-size: 2.2em;
+  }
+  #telegram > i {
+    font-size:26px;
+  }
+  .buttons {
+    margin-right: 0;
+  }
+  #help > i {
+    font-size:26px;
+  }
+  .buttons > a > i {
+    font-size:26px;
+  }
+  #question {
+    margin-right: 2px;
+  }
+}
