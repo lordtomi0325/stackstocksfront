@@ -5,5 +5,5 @@ import App from './App';
 
 ReactDOM.render(
   <BrowserRouter>
-    <Route component={App} onUpdate={logPageView} />
+    <Route component={App} />
   </BrowserRouter>, document.getElementById('root'));
