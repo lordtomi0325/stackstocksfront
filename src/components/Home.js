@@ -2,7 +2,6 @@ import React from 'react';
 import axios from 'axios';
 import './Home.css';
 import Header from './Header';
-import GoogleTrends from './GoogleTrends';
 
 class Home extends React.Component {
   constructor(props) {
@@ -13,7 +12,7 @@ class Home extends React.Component {
     };
   }
   getData = async () => {
-    const {data: trend } = await axios.get("https://stackstocks.com/api");
+    const { data: trend } = await axios.get("http://localhost:3001/api");
     this.setState({trend, isLoading:false});
   }
   componentDidMount(){

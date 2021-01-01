@@ -26,10 +26,6 @@ class Header extends React.Component {
           <a href="/">StackStocks</a>
         </span>
         <div className="buttons">
-          <a id="telegram" href="https://t.me/stackstocks" target="_blank" rel="noopener noreferrer">
-            <i className="fa fa-telegram"></i>
-            <span>TG</span>
-          </a>
           <div onClick={this.openModal} id="help">
             <i className="fa fa-question-circle"></i>
             <span>HELP</span>
