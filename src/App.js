@@ -8,14 +8,12 @@ import Error from "./components/Error";
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
-        <div>
-          <Switch>
-            <Route path="/" component={Home} exact />
-            <Route path="/question" component={Question} />
-            <Route component={Error} />
-          </Switch>
-        </div>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/question" component={Question} />
+          <Route component={Error} />
+        </Switch>
       </BrowserRouter>
     );
   }

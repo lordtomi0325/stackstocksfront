@@ -1,13 +1,14 @@
-import React from 'react';
-import './Header.css';
-import Modal from "./Modal";
+import React from "react";
+import { Link } from "react-router-dom";
 
+import "./Header.css";
+import Modal from "./Modal";
 
 class Header extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      isModalOpen: false
+      isModalOpen: false,
     };
   }
 
@@ -31,10 +32,10 @@ class Header extends React.Component {
             <span>HELP</span>
           </div>
           <Modal isOpen={this.state.isModalOpen} close={this.closeModal} />
-          <a href="/question" id="question">
+          <Link to="/question">
             <i className="fa fa-envelope"></i>
             <span>Q&A</span>
-          </a >
+          </Link>
         </div>
       </div>
     );
