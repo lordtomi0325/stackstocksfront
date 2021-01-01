@@ -13,7 +13,7 @@ class Home extends React.Component {
     };
   }
   getData = async () => {
-    const {data: trend } = await axios.get("/api");
+    const {data: trend } = await axios.get("https://stackstocks.com/api");
     this.setState({trend, isLoading:false});
   }
   componentDidMount(){
@@ -30,13 +30,6 @@ class Home extends React.Component {
         ) : (
       <div className="App">
         <Header />
-        <div id="widget">
-          <GoogleTrends
-            type="TIMESERIES"
-            keyword="/m/0cqt90"
-            url="https://ssl.gstatic.com/trends_nrtr/2051_RC11/embed_loader.js"
-          />
-        </div>
         <div id="trends">
           <h2><a href="https://trends.google.com/trends/trendingsearches/realtime?geo=US&category=b" target="_blank" rel="noopener noreferrer">Business Trends in US</a></h2>
           {
