@@ -12,7 +12,7 @@ class Home extends React.Component {
     };
   }
   getData = async () => {
-    const { data: trend } = await axios.get("http://localhost:3001/api");
+    const { data: trend } = await axios.get("https://stackstocksbackend.herokuapp.com/api");
     this.setState({trend, isLoading:false});
   }
   componentDidMount(){
